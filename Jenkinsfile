@@ -24,7 +24,7 @@ pipeline {
     DEV_DOCKERHUB_IMAGE = 'lsiodev/freecad'
     PR_DOCKERHUB_IMAGE = 'lspipepr/freecad'
     DIST_IMAGE = 'ubuntu'
-    MULTIARCH = 'false'
+    MULTIARCH = 'true'
     CI = 'true'
     CI_WEB = 'true'
     CI_PORT = '3000'
