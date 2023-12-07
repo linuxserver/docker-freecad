@@ -1,0 +1,28 @@
+---
+
+# jenkins variables
+project_name: docker-freecad
+external_type: na
+custom_version_command: "curl -sX GET https://ftp.debian.org/debian/dists/bookworm/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: freecad' | awk -F ': ' '/Version/{print $2;exit}' | awk -F '+' '{print $1}'"
+release_type: stable
+release_tag: latest
+ls_branch: master
+build_armhf: false
+repo_vars:
+  - BUILD_VERSION_ARG = 'FREECAD_VERSION'
+  - LS_USER = 'linuxserver'
+  - LS_REPO = 'docker-freecad'
+  - CONTAINER_NAME = 'freecad'
+  - DOCKERHUB_IMAGE = 'linuxserver/freecad'
+  - DEV_DOCKERHUB_IMAGE = 'lsiodev/freecad'
+  - PR_DOCKERHUB_IMAGE = 'lspipepr/freecad'
+  - DIST_IMAGE = 'ubuntu'
+  - MULTIARCH = 'false'
+  - CI = 'true'
+  - CI_WEB = 'true'
+  - CI_PORT = '3000'
+  - CI_SSL = 'false'
+  - CI_DELAY = '120'
+  - CI_DOCKERENV = 'TZ=US/Pacific'
+  - CI_AUTH = 'user:password'
+  - CI_WEBPATH = ''
