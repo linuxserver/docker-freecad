@@ -21,7 +21,6 @@ RUN \
     freecad \
     python3-pyside2.qtwebchannel \
     python3-pyside2.qtwebengine* && \
-  sed -i 's|</applications>|  <application title="FreeCAD*" type="normal">\n    <maximized>yes</maximized>\n  </application>\n</applications>|' /etc/xdg/openbox/rc.xml && \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \
