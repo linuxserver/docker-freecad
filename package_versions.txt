@@ -30,7 +30,7 @@ NAME                                                                          VE
 @tufjs/models                                                                 2.0.0                                               npm                         
 @types/cookie                                                                 0.4.1                                               npm                         
 @types/cors                                                                   2.8.17                                              npm                         
-@types/node                                                                   20.12.12                                            npm                         
+@types/node                                                                   20.13.0                                             npm                         
 Brotli                                                                        1.0.9                                               python                      
 Pillow                                                                        9.4.0                                               python                      
 Pivy                                                                          0.6.8                                               python                      
@@ -140,7 +140,8 @@ debconf                                                                       1.
 debian-archive-keyring                                                        2023.3+deb12u1                                      deb                         
 debianutils                                                                   5.7-0.5~deb12u1                                     deb                         
 debug                                                                         2.6.9                                               npm                         
-debug                                                                         4.3.4                                               npm        (+4 duplicates)  
+debug                                                                         4.3.4                                               npm                         
+debug                                                                         4.3.5                                               npm        (+3 duplicates)  
 decorator                                                                     5.1.1                                               python                      
 define-data-property                                                          1.1.4                                               npm                         
 depd                                                                          2.0.0                                               npm                         
@@ -821,7 +822,7 @@ libgs10                                                                       10
 libgs10-common                                                                10.0.0~dfsg-11+deb12u4                              deb                         
 libgsm1                                                                       1.0.22-1                                            deb                         
 libgssapi-krb5-2                                                              1.20.1-2+deb12u1                                    deb                         
-libgstreamer-plugins-base1.0-0                                                1.22.0-3+deb12u1                                    deb                         
+libgstreamer-plugins-base1.0-0                                                1.22.0-3+deb12u2                                    deb                         
 libgstreamer1.0-0                                                             1.22.0-2                                            deb                         
 libgudev-1.0-0                                                                237-2                                               deb                         
 libharfbuzz-subset0                                                           6.0.0+dfsg-3                                        deb                         
@@ -1388,8 +1389,8 @@ python3-mpmath                                                                1.
 python3-numpy                                                                 1:1.24.2-1                                          deb                         
 python3-oauthlib                                                              3.2.2-1                                             deb                         
 python3-packaging                                                             23.0-1                                              deb                         
-python3-pil                                                                   9.4.0-1.1+b1                                        deb                         
-python3-pil.imagetk                                                           9.4.0-1.1+b1                                        deb                         
+python3-pil                                                                   9.4.0-1.1+deb12u1                                   deb                         
+python3-pil.imagetk                                                           9.4.0-1.1+deb12u1                                   deb                         
 python3-pivy                                                                  0.6.8-1+b2                                          deb                         
 python3-pkg-resources                                                         66.1.1-1                                            deb                         
 python3-ply                                                                   3.11-5                                              deb                         
