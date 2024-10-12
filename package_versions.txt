@@ -26,6 +26,7 @@ NAME                                                                          VE
 @sigstore/tuf                                                                 2.3.2                                               npm                          
 @sigstore/verify                                                              1.2.0                                               npm                          
 @socket.io/component-emitter                                                  3.1.2                                               npm                          
+@socket.io/component-emitter                                                  UNKNOWN                                             npm        (+1 duplicate)    
 @tufjs/canonical-json                                                         2.0.0                                               npm                          
 @tufjs/models                                                                 2.0.0                                               npm                          
 @types/cookie                                                                 0.4.1                                               npm                          
@@ -111,16 +112,16 @@ cron-daemon-common                                                            3.
 cross-spawn                                                                   7.0.3                                               npm                          
 cryptography                                                                  38.0.4                                              python     (+1 duplicate)    
 cssesc                                                                        3.0.0                                               npm                          
-cups                                                                          2.4.2-3+deb12u7                                     deb                          
-cups-client                                                                   2.4.2-3+deb12u7                                     deb                          
-cups-common                                                                   2.4.2-3+deb12u7                                     deb                          
-cups-core-drivers                                                             2.4.2-3+deb12u7                                     deb                          
-cups-daemon                                                                   2.4.2-3+deb12u7                                     deb                          
-cups-filters                                                                  1.28.17-3                                           deb                          
-cups-filters-core-drivers                                                     1.28.17-3                                           deb                          
-cups-ipp-utils                                                                2.4.2-3+deb12u7                                     deb                          
-cups-ppdc                                                                     2.4.2-3+deb12u7                                     deb                          
-cups-server-common                                                            2.4.2-3+deb12u7                                     deb                          
+cups                                                                          2.4.2-3+deb12u8                                     deb                          
+cups-client                                                                   2.4.2-3+deb12u8                                     deb                          
+cups-common                                                                   2.4.2-3+deb12u8                                     deb                          
+cups-core-drivers                                                             2.4.2-3+deb12u8                                     deb                          
+cups-daemon                                                                   2.4.2-3+deb12u8                                     deb                          
+cups-filters                                                                  1.28.17-3+deb12u1                                   deb                          
+cups-filters-core-drivers                                                     1.28.17-3+deb12u1                                   deb                          
+cups-ipp-utils                                                                2.4.2-3+deb12u8                                     deb                          
+cups-ppdc                                                                     2.4.2-3+deb12u8                                     deb                          
+cups-server-common                                                            2.4.2-3+deb12u8                                     deb                          
 curl                                                                          7.88.1-10+deb12u7                                   deb                          
 cycler                                                                        0.11.0                                              python                       
 dario.cat/mergo                                                               v1.0.0                                              go-module  (+1 duplicate)    
@@ -166,6 +167,7 @@ encodeurl                                                                     2.
 encoding                                                                      0.1.13                                              npm                          
 engine.io                                                                     6.6.1                                               npm                          
 engine.io-parser                                                              5.2.3                                               npm                          
+engine.io-parser                                                              UNKNOWN                                             npm        (+1 duplicate)    
 env-paths                                                                     2.2.1                                               npm                          
 err-code                                                                      2.0.3                                               npm                          
 es-define-property                                                            1.0.0                                               npm                          
@@ -729,8 +731,8 @@ libcrypt1                                                                     1:
 libcryptsetup12                                                               2:2.6.1-4~deb12u2                                   deb                          
 libctf-nobfd0                                                                 2.40-2                                              deb                          
 libctf0                                                                       2.40-2                                              deb                          
-libcups2                                                                      2.4.2-3+deb12u7                                     deb                          
-libcupsfilters1                                                               1.28.17-3                                           deb                          
+libcups2                                                                      2.4.2-3+deb12u8                                     deb                          
+libcupsfilters1                                                               1.28.17-3+deb12u1                                   deb                          
 libcurl3-gnutls                                                               7.88.1-10+deb12u7                                   deb                          
 libcurl4                                                                      7.88.1-10+deb12u7                                   deb                          
 libdata-optlist-perl                                                          0.113-1                                             deb                          
@@ -784,7 +786,7 @@ libfile-sharedir-perl                                                         1.
 libflac12                                                                     1.4.2+ds-2                                          deb                          
 libflite1                                                                     2.2-5                                               deb                          
 libfontconfig1                                                                2.14.1-4                                            deb                          
-libfontembed1                                                                 1.28.17-3                                           deb                          
+libfontembed1                                                                 1.28.17-3+deb12u1                                   deb                          
 libfontenc1                                                                   1:1.1.4-1                                           deb                          
 libfreecad-python3-0.20                                                       0.20.2+dfsg1-4                                      deb                          
 libfreeimage3                                                                 3.18.0+ds2-9+deb12u1                                deb                          
