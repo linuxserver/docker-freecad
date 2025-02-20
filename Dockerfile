@@ -20,7 +20,6 @@ echo "**** install packages ****" && \
 apt-get update && \
 apt-get upgrade -y && \
 apt-get install -y --no-install-recommends \
-  firefox-esr \
   gstreamer1.0-alsa \
   gstreamer1.0-gl \
   gstreamer1.0-gtk3 \
