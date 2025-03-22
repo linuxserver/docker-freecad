@@ -122,7 +122,7 @@ cups-filters-core-drivers                                                     1.
 cups-ipp-utils                                                                2.4.2-3+deb12u8                         deb                         
 cups-ppdc                                                                     2.4.2-3+deb12u8                         deb                         
 cups-server-common                                                            2.4.2-3+deb12u8                         deb                         
-curl                                                                          7.88.1-10+deb12u8                       deb                         
+curl                                                                          7.88.1-10+deb12u12                      deb                         
 cycler                                                                        0.11.0                                  python                      
 dario.cat/mergo                                                               v1.0.0                                  go-module                   
 dario.cat/mergo                                                               v1.0.1                                  go-module  (+1 duplicate)   
@@ -754,8 +754,8 @@ libctf-nobfd0                                                                 2.
 libctf0                                                                       2.40-2                                  deb                         
 libcups2                                                                      2.4.2-3+deb12u8                         deb                         
 libcupsfilters1                                                               1.28.17-3+deb12u1                       deb                         
-libcurl3-gnutls                                                               7.88.1-10+deb12u8                       deb                         
-libcurl4                                                                      7.88.1-10+deb12u8                       deb                         
+libcurl3-gnutls                                                               7.88.1-10+deb12u12                      deb                         
+libcurl4                                                                      7.88.1-10+deb12u12                      deb                         
 libdata-optlist-perl                                                          0.113-1                                 deb                         
 libdatetime-locale-perl                                                       1:1.37-1                                deb                         
 libdatetime-perl                                                              2:1.59-1                                deb                         
@@ -1002,7 +1002,7 @@ libpackagekit-glib2-18                                                        1.
 libpam-modules                                                                1.5.2-6+deb12u1                         deb                         
 libpam-modules-bin                                                            1.5.2-6+deb12u1                         deb                         
 libpam-runtime                                                                1.5.2-6+deb12u1                         deb                         
-libpam-systemd                                                                252.33-1~deb12u1                        deb                         
+libpam-systemd                                                                252.36-1~deb12u1                        deb                         
 libpam0g                                                                      1.5.2-6+deb12u1                         deb                         
 libpango-1.0-0                                                                1.50.12+ds-1                            deb                         
 libpangocairo-1.0-0                                                           1.50.12+ds-1                            deb                         
@@ -1070,7 +1070,7 @@ libqt5widgets5                                                                5.
 libqt5xml5                                                                    5.15.8+dfsg-11+deb12u2                  deb                         
 libqt5xmlpatterns5                                                            5.15.8-2                                deb                         
 libquadmath0                                                                  12.2.0-14                               deb                         
-librabbitmq4                                                                  0.11.0-1+b1                             deb                         
+librabbitmq4                                                                  0.11.0-1+deb12u1                        deb                         
 libraqm0                                                                      0.7.0-4.1                               deb                         
 librav1e0                                                                     0.5.1-6                                 deb                         
 libraw1394-11                                                                 2.1.2-2                                 deb                         
@@ -1136,8 +1136,8 @@ libsvtav1enc1                                                                 1.
 libswitch-perl                                                                2.17-3                                  deb                         
 libswresample4                                                                7:5.1.6-0+deb12u1                       deb                         
 libswscale6                                                                   7:5.1.6-0+deb12u1                       deb                         
-libsystemd-shared                                                             252.33-1~deb12u1                        deb                         
-libsystemd0                                                                   252.33-1~deb12u1                        deb                         
+libsystemd-shared                                                             252.36-1~deb12u1                        deb                         
+libsystemd0                                                                   252.36-1~deb12u1                        deb                         
 libsz2                                                                        1.0.6-1+b1                              deb                         
 libtasn1-6                                                                    4.19.0-2+deb12u1                        deb                         
 libtbb12                                                                      2021.8.0-2                              deb                         
@@ -1160,7 +1160,7 @@ libtwolame0                                                                   0.
 libubsan1                                                                     12.2.0-14                               deb                         
 libuchardet0                                                                  0.0.7-1                                 deb                         
 libucx0                                                                       1.13.1-1                                deb                         
-libudev1                                                                      252.33-1~deb12u1                        deb                         
+libudev1                                                                      252.36-1~deb12u1                        deb                         
 libudfread0                                                                   1.1.2-1                                 deb                         
 libunbound8                                                                   1.17.1-2+deb12u2                        deb                         
 libunistring2                                                                 1.0-2                                   deb                         
@@ -1312,8 +1312,8 @@ ncurses-bin                                                                   6.
 negotiator                                                                    0.6.3                                   npm        (+1 duplicate)   
 netbase                                                                       6.4                                     deb                         
 netcat-traditional                                                            1.10-47                                 deb                         
-nginx                                                                         1.22.1-9                                deb                         
-nginx-common                                                                  1.22.1-9                                deb                         
+nginx                                                                         1.22.1-9+deb12u1                        deb                         
+nginx-common                                                                  1.22.1-9+deb12u1                        deb                         
 node-gyp                                                                      10.1.0                                  npm                         
 nodejs                                                                        18.20.6-1nodesource1                    deb                         
 nopt                                                                          7.2.1                                   npm                         
@@ -1523,8 +1523,8 @@ sudo                                                                          1.
 supports-color                                                                7.2.0                                   npm                         
 supports-color                                                                9.4.0                                   npm                         
 sympy                                                                         1.11.1                                  python                      
-systemd                                                                       252.33-1~deb12u1                        deb                         
-systemd-sysv                                                                  252.33-1~deb12u1                        deb                         
+systemd                                                                       252.36-1~deb12u1                        deb                         
+systemd-sysv                                                                  252.36-1~deb12u1                        deb                         
 sysvinit-utils                                                                3.06-4                                  deb                         
 tags.cncf.io/container-device-interface                                       v0.7.2                                  go-module                   
 tags.cncf.io/container-device-interface                                       v0.8.0                                  go-module                   
@@ -1542,7 +1542,7 @@ tuf-js                                                                        2.
 type-is                                                                       1.6.18                                  npm                         
 tzdata                                                                        2024b-0+deb12u1                         deb                         
 ucf                                                                           3.0043+nmu1+deb12u1                     deb                         
-udev                                                                          252.33-1~deb12u1                        deb                         
+udev                                                                          252.36-1~deb12u1                        deb                         
 ufolib2                                                                       0.14.0                                  python                      
 undici-types                                                                  6.20.0                                  npm                         
 unicode-data                                                                  15.0.0-1                                deb                         
