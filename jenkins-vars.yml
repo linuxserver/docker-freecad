@@ -2,8 +2,7 @@
 
 # jenkins variables
 project_name: docker-freecad
-external_type: na
-custom_version_command: "curl -sX GET 'https://api.github.com/repos/FreeCAD/FreeCAD/releases/latest' | awk -F'\"' '/\"tag_name\":/{ print $4; exit }'"
+external_type: github_stable
 release_type: stable
 release_tag: latest
 ls_branch: master
