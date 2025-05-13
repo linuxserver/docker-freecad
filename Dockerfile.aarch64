@@ -21,7 +21,7 @@ RUN \
     FREECAD_URL=$(curl -sX GET "https://api.github.com/repos/FreeCAD/FreeCAD/releases/latest" | jq -r '.assets[] | select(.name | contains("Linux") and contains("aarch64")) | select(.name | contains("SHA256") | not) | .browser_download_url'); \
   else \
     ASSETS_URL=$(curl -sX GET "https://api.github.com/repos/FreeCAD/FreeCAD/releases/tags/${FREECAD_VERSION}" | jq -r '.assets_url'); \
-    FREECAD_URL=$(curl -sX GET "$ASSETS_URL" | jq -r '.[] | select(.name | contains("Linux") and contains("aarch64") and (contains("SHA256") | not)) | .browser_download_url'); \
+    FREECAD_URL=$(curl -sX GET "$ASSETS_URL" | jq -r '.[] | select(.name | contains("Linux") and contains("aarch64") and (contains("SHA256") | not) and (contains(".zsync") | not)) | .browser_download_url'); \
   fi && \
   echo "Downloading FreeCAD from: ${FREECAD_URL}" && \
   cd /tmp && \
