@@ -9,6 +9,8 @@ release_tag: latest
 ls_branch: master
 build_armhf: false
 repo_vars:
+  - EXT_USER = 'FreeCAD'
+  - EXT_REPO = 'FreeCAD'
   - BUILD_VERSION_ARG = 'FREECAD_VERSION'
   - LS_USER = 'linuxserver'
   - LS_REPO = 'docker-freecad'
