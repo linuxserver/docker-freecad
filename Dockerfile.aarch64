@@ -3,7 +3,7 @@ FROM ghcr.io/linuxserver/baseimage-kasmvnc:arm64v8-debianbookworm
 # set version label
 ARG BUILD_DATE
 ARG VERSION
-ARG FREECAD_VERSION
+ARG FREECAD_VERSION="1.0.0"
 LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="thelamer"
 
@@ -17,9 +17,8 @@ RUN \
     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/freecad-logo.png
 RUN \
   echo " install freecad from appimage " && \
-  freecad_version="1.0.0" && \
   cd /tmp && \
-  curl -o /tmp/freecad.app -L https://github.com/FreeCAD/FreeCAD/releases/download/1.0.0/FreeCAD_1.0.0-conda-Linux-aarch64-py311.AppImage && \
+  curl -o /tmp/freecad.app -L https://github.com/FreeCAD/FreeCAD/releases/download/${FREECAD_VERSION}/FreeCAD_${FREECAD_VERSION}-conda-Linux-aarch64-py311.AppImage && \
   chmod +x /tmp/freecad.app && \
   ./freecad.app --appimage-extract && \
   mv squashfs-root /opt/freecad && \
