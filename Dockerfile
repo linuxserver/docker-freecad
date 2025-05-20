@@ -13,8 +13,8 @@ ENV TITLE=FreeCAD
 RUN \
   echo "**** add icon ****" && \
   curl -o \
-  /usr/share/icons/hicolor/48x48/apps/freecad.png \
-  https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/freecad-logo.png
+    /usr/share/icons/hicolor/48x48/apps/freecad.png \
+    https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/freecad-logo.png
 RUN \
   echo " install freecad from appimage " && \
   cd /tmp && \
