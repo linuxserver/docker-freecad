@@ -138,17 +138,22 @@ pipeline {
     /* ########################
        External Release Tagging
        ######################## */
-    // If this is a custom command to determine version use that command
-    stage("Set tag custom bash"){
+    // If this is a stable github release use the latest endpoint from github to determine the ext tag
+    stage("Set ENV github_stable"){
       steps{
         script{
           env.EXT_RELEASE = sh(
-            script: ''' curl -sX GET https://ftp.debian.org/debian/dists/bookworm/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: freecad' | awk -F ': ' '/Version/{print $2;exit}' | awk -F '+' '{print $1}' ''',
+            script: '''curl -H "Authorization: token ${GITHUB_TOKEN}" -s https://api.github.com/repos/FreeCAD/FreeCAD/releases/latest | jq -r '. | .tag_name' ''',
             returnStdout: true).trim()
-            env.RELEASE_LINK = 'custom_command'
         }
       }
     }
+    // If this is a stable or devel github release generate the link for the build message
+    stage("Set ENV github_link"){
+      steps{
+        script{
+          env.RELEASE_LINK = 'https://github.com/FreeCAD/FreeCAD/releases/tag/' + env.EXT_RELEASE
+      }
     // Sanitize the release tag and strip illegal docker or github characters
     stage("Sanitize tag"){
       steps{
