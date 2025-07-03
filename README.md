@@ -405,6 +405,6 @@ Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64
 
 ## Versions
 
-* **02.07.25:** - Rebase to Selkies, ingest from current appimage.
+* **02.07.25:** - Rebase to Selkies, HTTPS is now required! Ingest from current appimage.
 * **10.02.24:** - Update Readme with new env vars and ingest proper PWA icon.
 * **06.12.23:** - Initial release.

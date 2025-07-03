@@ -42,6 +42,6 @@ app_setup_block: |
 
 # changelog
 changelogs:
-  - {date: "02.07.25:", desc: "Rebase to Selkies, ingest from current appimage."}
+  - {date: "02.07.25:", desc: "Rebase to Selkies, HTTPS is now required! Ingest from current appimage."}
   - {date: "10.02.24:", desc: "Update Readme with new env vars and ingest proper PWA icon."}
   - {date: "06.12.23:", desc: "Initial release."}
