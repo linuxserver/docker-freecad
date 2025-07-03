@@ -30,7 +30,7 @@ param_ports:
 opt_security_opt_param: true
 opt_security_opt_param_vars:
   - {run_var: "seccomp=unconfined", compose_var: "seccomp:unconfined", desc: "For Docker Engine only, many modern gui apps need this to function on older hosts as syscalls are unknown to Docker."}
-# Kasm blurb settings
+# Selkies blurb settings
 selkies_blurb: true
 show_nvidia: true
 # application setup block
