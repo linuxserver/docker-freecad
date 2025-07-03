@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/baseimage-kasmvnc:debianbookworm
+FROM ghcr.io/linuxserver/baseimage-selkies:debianbookworm
 
 # set version label
 ARG BUILD_DATE
@@ -13,14 +13,28 @@ ENV TITLE=FreeCAD
 RUN \
   echo "**** add icon ****" && \
   curl -o \
-    /kclient/public/icon.png \
+    /usr/share/selkies/www/icon.png \
     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/freecad-logo.png && \
   echo "**** install packages ****" && \
-  apt-get update && \
-  apt-get install -y --no-install-recommends \
-    freecad \
-    python3-pyside2.qtwebchannel \
-    python3-pyside2.qtwebengine* && \
+  DOWNLOAD_URL=$(curl -sX GET "https://api.github.com/repos/FreeCAD/FreeCAD/releases/latest" \
+    | awk -F '(": "|")' '/browser.*Linux-x86_64-py311.AppImage/ {print $3;exit}') && \
+  curl -o \
+    /tmp/freecad.app -L \
+    "${DOWNLOAD_URL}" && \
+  cd /tmp && \
+  chmod +x freecad.app && \
+  ./freecad.app --appimage-extract && \
+  mv \
+    squashfs-root \
+    /opt/freecad && \
+  echo "**** launcher ****" && \
+  echo \
+    "#!/bin/bash" \
+    > /usr/bin/freecad && \
+  echo \
+    "xterm -e /opt/freecad/AppRun \"\${@}\"" \
+    >> /usr/bin/freecad && \
+  chmod +x /usr/bin/freecad && \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \

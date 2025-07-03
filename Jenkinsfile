@@ -19,6 +19,9 @@ pipeline {
     DOCKERHUB_TOKEN=credentials('docker-hub-ci-pat')
     QUAYIO_API_TOKEN=credentials('quayio-repo-api-token')
     GIT_SIGNING_KEY=credentials('484fbca6-9a4f-455e-b9e3-97ac98785f5f')
+    EXT_GIT_BRANCH = 'master'
+    EXT_USER = 'FreeCAD'
+    EXT_REPO = 'FreeCAD'
     BUILD_VERSION_ARG = 'FREECAD_VERSION'
     LS_USER = 'linuxserver'
     LS_REPO = 'docker-freecad'
@@ -30,8 +33,8 @@ pipeline {
     MULTIARCH = 'true'
     CI = 'true'
     CI_WEB = 'true'
-    CI_PORT = '3000'
-    CI_SSL = 'false'
+    CI_PORT = '3001'
+    CI_SSL = 'true'
     CI_DELAY = '120'
     CI_DOCKERENV = 'TZ=US/Pacific'
     CI_AUTH = 'user:password'
@@ -94,7 +97,11 @@ pipeline {
           env.DOCKERHUB_LINK = 'https://hub.docker.com/r/' + env.DOCKERHUB_IMAGE + '/tags/'
           env.PULL_REQUEST = env.CHANGE_ID
           env.TEMPLATED_FILES = 'Jenkinsfile README.md LICENSE .editorconfig ./.github/CONTRIBUTING.md ./.github/FUNDING.yml ./.github/ISSUE_TEMPLATE/config.yml ./.github/ISSUE_TEMPLATE/issue.bug.yml ./.github/ISSUE_TEMPLATE/issue.feature.yml ./.github/PULL_REQUEST_TEMPLATE.md ./.github/workflows/external_trigger_scheduler.yml ./.github/workflows/greetings.yml ./.github/workflows/package_trigger_scheduler.yml ./.github/workflows/call_issue_pr_tracker.yml ./.github/workflows/call_issues_cron.yml ./.github/workflows/permissions.yml ./.github/workflows/external_trigger.yml'
+          if ( env.SYFT_IMAGE_TAG == null ) {
+            env.SYFT_IMAGE_TAG = 'latest'
+          }
         }
+        echo "Using syft image tag ${SYFT_IMAGE_TAG}"
         sh '''#! /bin/bash
               echo "The default github branch detected as ${GH_DEFAULT_BRANCH}" '''
         script{
@@ -138,16 +145,23 @@ pipeline {
     /* ########################
        External Release Tagging
        ######################## */
-    // If this is a custom command to determine version use that command
-    stage("Set tag custom bash"){
-      steps{
-        script{
-          env.EXT_RELEASE = sh(
-            script: ''' curl -sX GET https://ftp.debian.org/debian/dists/bookworm/main/binary-amd64/Packages.gz | gunzip |grep -A 7 -m 1 'Package: freecad' | awk -F ': ' '/Version/{print $2;exit}' | awk -F '+' '{print $1}' ''',
-            returnStdout: true).trim()
-            env.RELEASE_LINK = 'custom_command'
-        }
-      }
+    // If this is a stable github release use the latest endpoint from github to determine the ext tag
+    stage("Set ENV github_stable"){
+     steps{
+       script{
+         env.EXT_RELEASE = sh(
+           script: '''curl -H "Authorization: token ${GITHUB_TOKEN}" -s https://api.github.com/repos/${EXT_USER}/${EXT_REPO}/releases/latest | jq -r '. | .tag_name' ''',
+           returnStdout: true).trim()
+       }
+     }
+    }
+    // If this is a stable or devel github release generate the link for the build message
+    stage("Set ENV github_link"){
+     steps{
+       script{
+         env.RELEASE_LINK = 'https://github.com/' + env.EXT_USER + '/' + env.EXT_REPO + '/releases/tag/' + env.EXT_RELEASE
+       }
+     }
     }
     // Sanitize the release tag and strip illegal docker or github characters
     stage("Sanitize tag"){
@@ -780,7 +794,7 @@ pipeline {
               docker run --rm \
                 -v /var/run/docker.sock:/var/run/docker.sock:ro \
                 -v ${TEMPDIR}:/tmp \
-                ghcr.io/anchore/syft:v1.26.1 \
+                ghcr.io/anchore/syft:${SYFT_IMAGE_TAG} \
                 ${LOCAL_CONTAINER} -o table=/tmp/package_versions.txt
               NEW_PACKAGE_TAG=$(md5sum ${TEMPDIR}/package_versions.txt | cut -c1-8 )
               echo "Package tag sha from current packages in buit container is ${NEW_PACKAGE_TAG} comparing to old ${PACKAGE_TAG} from github"
@@ -890,6 +904,7 @@ pipeline {
                 -e WEB_AUTH=\"${CI_AUTH}\" \
                 -e WEB_PATH=\"${CI_WEBPATH}\" \
                 -e NODE_NAME=\"${NODE_NAME}\" \
+                -e SYFT_IMAGE_TAG=\"${CI_SYFT_IMAGE_TAG:-${SYFT_IMAGE_TAG}}\" \
                 -t ghcr.io/linuxserver/ci:latest \
                 python3 test_build.py'''
         }
@@ -983,7 +998,7 @@ pipeline {
              "tagger": {"name": "LinuxServer-CI","email": "ci@linuxserver.io","date": "'${GITHUB_DATE}'"}}' '''
         echo "Pushing New release for Tag"
         sh '''#! /bin/bash
-              echo "Updating to ${EXT_RELEASE_CLEAN}" > releasebody.json
+              curl -H "Authorization: token ${GITHUB_TOKEN}" -s https://api.github.com/repos/${EXT_USER}/${EXT_REPO}/releases/latest | jq '. |.body' | sed 's:^.\\(.*\\).$:\\1:' > releasebody.json
               echo '{"tag_name":"'${META_TAG}'",\
                      "target_commitish": "master",\
                      "name": "'${META_TAG}'",\
