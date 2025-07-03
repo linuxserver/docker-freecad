@@ -27,6 +27,14 @@ RUN \
   mv \
     squashfs-root \
     /opt/freecad && \
+  echo "**** launcher ****" && \
+  echo \
+    "#!/bin/bash" \
+    > /usr/bin/freecad && \
+  echo \
+    "xterm -e /opt/freecad/AppRun \"\${@}\"" \
+    >> /usr/bin/freecad && \
+  chmod +x /usr/bin/freecad && \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
   rm -rf \
