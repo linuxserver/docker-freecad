@@ -18,6 +18,7 @@ binutils-common                                                               2.
 binutils-x86-64-linux-gnu                                                     2.40-2                                  deb                         
 blinker                                                                       1.5                                     python                      
 blinker                                                                       1.9.0                                   python                      
+breeze-cursor-theme                                                           4:5.27.5-2                              deb                         
 brotli                                                                        1.1.0                                   python                      
 bsd-mailx                                                                     8.1.2-0.20220412cvs-1                   deb                         
 bsdextrautils                                                                 2.38.1-5+deb12u3                        deb                         
@@ -707,7 +708,7 @@ libjpeg62-turbo                                                               1:
 libjq1                                                                        1.6-2.1                                 deb                         
 libjson-c5                                                                    0.16-2                                  deb                         
 libjsoncpp25                                                                  1.9.5-4                                 deb                         
-libjxl0.7                                                                     0.7.0-10                                deb                         
+libjxl0.7                                                                     0.7.0-10+deb12u1                        deb                         
 libk5crypto3                                                                  1.20.1-2+deb12u3                        deb                         
 libkeyutils1                                                                  1.6.3-2                                 deb                         
 libkmod2                                                                      30+20221128-1                           deb                         
