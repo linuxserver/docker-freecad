@@ -838,7 +838,7 @@ libspeexdsp1                                                                  1.
 libsqlite3-0                                                                  3.40.1-2+deb12u1                           deb                         
 libss2                                                                        1.47.0-2                                   deb                         
 libssh2-1                                                                     1.10.0-3+b1                                deb                         
-libssl3                                                                       3.0.17-1~deb12u1                           deb                         
+libssl3                                                                       3.0.17-1~deb12u2                           deb                         
 libstartup-notification0                                                      0.12-6+b1                                  deb                         
 libstdc++-12-dev                                                              12.2.0-14+deb12u1                          deb                         
 libstdc++6                                                                    12.2.0-14+deb12u1                          deb                         
@@ -993,7 +993,7 @@ opencamlib                                                                    20
 opencv-python                                                                 4.11.0                                     python                      
 opencv-python-headless                                                        4.11.0                                     python                      
 openssh-client                                                                1:9.2p1-2+deb12u7                          deb                         
-openssl                                                                       3.0.17-1~deb12u1                           deb                         
+openssl                                                                       3.0.17-1~deb12u2                           deb                         
 packagekit                                                                    1.2.6-5                                    deb                         
 packaging                                                                     24.2                                       python                      
 packaging                                                                     25.0                                       python                      
