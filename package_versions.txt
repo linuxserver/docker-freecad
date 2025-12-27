@@ -1012,7 +1012,7 @@ pillow                                                                        9.
 pinentry-curses                                                               1.3.1-2                                 deb                         
 pip                                                                           25.1.1                                  python                      
 pip                                                                           25.2                                    python                      
-pixelflux                                                                     1.5.0                                   python                      
+pixelflux                                                                     1.5.1                                   python                      
 platformdirs                                                                  4.2.2                                   python     (+1 duplicate)   
 ply                                                                           3.11                                    python                      
 poppler-data                                                                  0.4.12-1                                deb                         
@@ -1021,7 +1021,7 @@ prometheus-client                                                             0.
 propcache                                                                     0.3.1                                   python                      
 propcache                                                                     0.4.1                                   python                      
 psmisc                                                                        23.7-2                                  deb                         
-psutil                                                                        7.1.3                                   python                      
+psutil                                                                        7.2.0                                   python                      
 publicsuffix                                                                  20250328.1952-0.1                       deb                         
 pulseaudio                                                                    17.0+dfsg1-2+b1                         deb                         
 pulseaudio-utils                                                              17.0+dfsg1-2+b1                         deb                         
