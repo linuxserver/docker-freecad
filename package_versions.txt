@@ -5,7 +5,7 @@ adwaita-icon-theme                                                            48
 aiofiles                                                                      25.1.0                                  python                      
 aiohappyeyeballs                                                              2.6.1                                   python     (+1 duplicate)   
 aiohttp                                                                       3.12.15                                 python                      
-aiohttp                                                                       3.13.2                                  python                      
+aiohttp                                                                       3.13.3                                  python                      
 aioice                                                                        0.10.2                                  python                      
 aiosignal                                                                     1.4.0                                   python     (+1 duplicate)   
 apt                                                                           3.0.3                                   deb                         
@@ -82,8 +82,8 @@ distro                                                                        1.
 dmsetup                                                                       2:1.02.205-2                            deb                         
 dnspython                                                                     2.8.0                                   python                      
 docker-buildx-plugin                                                          0.30.1-1~debian.13~trixie               deb                         
-docker-ce                                                                     5:29.1.3-1~debian.13~trixie             deb                         
-docker-ce-cli                                                                 5:29.1.3-1~debian.13~trixie             deb                         
+docker-ce                                                                     5:29.1.4-1~debian.13~trixie             deb                         
+docker-ce-cli                                                                 5:29.1.4-1~debian.13~trixie             deb                         
 docker-compose-plugin                                                         5.0.1-1~debian.13~trixie                deb                         
 docutils                                                                      0.22                                    python                      
 dpkg                                                                          1.22.21                                 deb                         
@@ -326,14 +326,13 @@ github.com/mitchellh/go-wordwrap                                              v1
 github.com/mitchellh/hashstructure/v2                                         v2.0.2                                  go-module  (+2 duplicates)  
 github.com/mitchellh/reflectwalk                                              v1.0.2                                  go-module                   
 github.com/moby/buildkit                                                      v0.26.1                                 go-module                   
-github.com/moby/buildkit                                                      v0.26.2                                 go-module                   
-github.com/moby/buildkit                                                      v0.26.3                                 go-module                   
+github.com/moby/buildkit                                                      v0.26.3                                 go-module  (+1 duplicate)   
 github.com/moby/docker-image-spec                                             v1.3.1                                  go-module  (+2 duplicates)  
 github.com/moby/go-archive                                                    v0.1.0                                  go-module  (+2 duplicates)  
 github.com/moby/ipvs                                                          v1.1.0                                  go-module                   
 github.com/moby/locker                                                        v1.0.1                                  go-module  (+4 duplicates)  
 github.com/moby/moby/api                                                      v1.52.0                                 go-module                   
-github.com/moby/moby/v2                                                       v29.1.3                                 go-module  (+1 duplicate)   
+github.com/moby/moby/v2                                                       v29.1.4                                 go-module  (+1 duplicate)   
 github.com/moby/patternmatcher                                                v0.6.0                                  go-module  (+2 duplicates)  
 github.com/moby/policy-helpers                                                v0.0.0-20251105011237-bcaa71c99f14      go-module                   
 github.com/moby/profiles/apparmor                                             v0.1.0                                  go-module                   
@@ -1020,7 +1019,7 @@ pillow                                                                        9.
 pinentry-curses                                                               1.3.1-2                                 deb                         
 pip                                                                           25.1.1                                  python                      
 pip                                                                           25.2                                    python                      
-pixelflux                                                                     1.5.3                                   python                      
+pixelflux                                                                     1.5.4                                   python                      
 platformdirs                                                                  4.2.2                                   python     (+1 duplicate)   
 ply                                                                           3.11                                    python                      
 poppler-data                                                                  0.4.12-1                                deb                         
@@ -1111,6 +1110,7 @@ watchdog                                                                      6.
 websockets                                                                    15.0.1                                  python                      
 wheel                                                                         0.45.1                                  python     (+2 duplicates)  
 wl-clipboard                                                                  2.2.1-2                                 deb                         
+wlr-randr                                                                     0.4.1-1                                 deb                         
 wslink                                                                        2.3.4                                   python                      
 wtype                                                                         0.4-3                                   deb                         
 x11-apps                                                                      7.7+11+b1                               deb                         
