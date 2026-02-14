@@ -57,7 +57,7 @@ cpp-14-x86-64-linux-gnu                                                       14
 cpp-x86-64-linux-gnu                                                          4:14.2.0-1                              deb                         
 cron                                                                          3.0pl1-197                              deb                         
 cron-daemon-common                                                            3.0pl1-197                              deb                         
-cryptography                                                                  46.0.4                                  python                      
+cryptography                                                                  46.0.5                                  python                      
 csharpexec-test                                                               UNKNOWN                                 binary                      
 curl                                                                          8.14.1-2+deb13u2                        deb                         
 cycler                                                                        0.12.1                                  python                      
@@ -1043,7 +1043,7 @@ libzstd1                                                                      1.
 libzvbi-common                                                                0.2.44-1                                deb                         
 libzvbi0t64                                                                   0.2.44-1                                deb                         
 license-checker                                                               25.0.1                                  npm                         
-linux-libc-dev                                                                6.12.63-1                               deb                         
+linux-libc-dev                                                                6.12.69-1                               deb                         
 linux-sysctl-defaults                                                         4.12                                    deb                         
 locales                                                                       2.41-12+deb13u1                         deb                         
 locales-all                                                                   2.41-12+deb13u1                         deb                         
@@ -1068,15 +1068,15 @@ msgpack                                                                       1.
 multidict                                                                     6.6.3                                   python                      
 multidict                                                                     6.7.1                                   python                      
 munkres                                                                       1.1.4                                   python                      
-my-test-package                                                               1.0                                     python     (+1 duplicate)   
+my-test-package                                                               1.0                                     python                      
 ncurses-base                                                                  6.5+20250216-2                          deb                         
 ncurses-bin                                                                   6.5+20250216-2                          deb                         
 ncurses-term                                                                  6.5+20250216-2                          deb                         
 netbase                                                                       6.5                                     deb                         
 netcat-traditional                                                            1.10-50                                 deb                         
 nftables                                                                      1.1.3-1                                 deb                         
-nginx                                                                         1.26.3-3+deb13u1                        deb                         
-nginx-common                                                                  1.26.3-3+deb13u1                        deb                         
+nginx                                                                         1.26.3-3+deb13u2                        deb                         
+nginx-common                                                                  1.26.3-3+deb13u2                        deb                         
 nine                                                                          1.1.0                                   python                      
 nopt                                                                          4.0.1                                   npm                         
 numpy                                                                         1.26.4                                  python                      
@@ -1102,7 +1102,7 @@ pcmflux                                                                       1.
 perl                                                                          5.40.1-6                                deb                         
 perl-base                                                                     5.40.1-6                                deb                         
 perl-modules-5.40                                                             5.40.1-6                                deb                         
-pillow                                                                        12.1.0                                  python                      
+pillow                                                                        12.1.1                                  python                      
 pillow                                                                        9.5.0                                   python                      
 pinentry-curses                                                               1.3.1-2                                 deb                         
 pip                                                                           25.1.1                                  python                      
@@ -1155,7 +1155,7 @@ sed                                                                           4.
 selkies                                                                       0.0.0                                   python                      
 sensible-utils                                                                0.0.25                                  deb                         
 setuptools                                                                    80.9.0                                  python                      
-setuptools                                                                    81.0.0                                  python                      
+setuptools                                                                    82.0.0                                  python                      
 shared-mime-info                                                              2.4-5+b2                                deb                         
 shiboken2                                                                     5.15.15                                 python                      
 sigs.k8s.io/json                                                              v0.0.0-20241014173422-cfa47c3a1cc8      go-module  (+2 duplicates)  
