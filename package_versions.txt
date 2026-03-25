@@ -4,7 +4,7 @@ adduser                                                                       3.
 adwaita-icon-theme                                                            48.1-1                                 deb                         
 aiofiles                                                                      25.1.0                                 python                      
 aiohappyeyeballs                                                              2.6.1                                  python     (+1 duplicate)   
-aiohttp                                                                       3.12.15                                python                      
+aiohttp                                                                       3.13.2                                 python                      
 aiohttp                                                                       3.13.3                                 python                      
 aioice                                                                        0.10.2                                 python                      
 aiosignal                                                                     1.4.0                                  python     (+1 duplicate)   
@@ -12,10 +12,11 @@ apt                                                                           3.
 apt-transport-https                                                           3.0.3                                  deb                         
 apt-utils                                                                     3.0.3                                  deb                         
 at-spi2-common                                                                2.56.2-1+deb13u1                       deb                         
-attrs                                                                         25.3.0                                 python                      
+attrs                                                                         25.4.0                                 python                      
 attrs                                                                         26.1.0                                 python                      
 autocommand                                                                   2.2.2                                  python     (+1 duplicate)   
 backports-tarfile                                                             1.2.0                                  python     (+1 duplicate)   
+backports-zstd                                                                1.2.0                                  python                      
 base-files                                                                    13.8+deb13u4                           deb                         
 base-passwd                                                                   3.6.7                                  deb                         
 bash                                                                          5.2.37-2+b8                            deb                         
@@ -25,16 +26,15 @@ binutils-common                                                               2.
 binutils-x86-64-linux-gnu                                                     2.44-3                                 deb                         
 blinker                                                                       1.9.0                                  python                      
 breeze-cursor-theme                                                           4:6.3.5-1                              deb                         
-brotli                                                                        1.1.0                                  python                      
+brotli                                                                        1.2.0                                  python                      
 bsd-mailx                                                                     8.1.2-0.20220412cvs-1.1                deb                         
 bsdextrautils                                                                 2.41-5                                 deb                         
 bsdutils                                                                      1:2.41-5                               deb                         
 ca-certificates                                                               20250419                               deb                         
 catatonit                                                                     0.2.1-2+b12                            deb                         
-certifi                                                                       2025.8.3                               python                      
-cffi                                                                          1.17.1                                 python                      
+certifi                                                                       2025.11.12                             python                      
 cffi                                                                          2.0.0                                  python                      
-charset-normalizer                                                            3.4.2                                  python                      
+charset-normalizer                                                            3.4.4                                  python                      
 cli                                                                           UNKNOWN                                binary     (+1 duplicate)   
 cli-32                                                                        UNKNOWN                                binary     (+1 duplicate)   
 cli-64                                                                        UNKNOWN                                binary     (+1 duplicate)   
@@ -58,7 +58,6 @@ cpp-x86-64-linux-gnu                                                          4:
 cron                                                                          3.0pl1-197                             deb                         
 cron-daemon-common                                                            3.0pl1-197                             deb                         
 cryptography                                                                  46.0.5                                 python                      
-csharpexec-test                                                               UNKNOWN                                binary                      
 curl                                                                          8.14.1-2+deb13u2                       deb                         
 cycler                                                                        0.12.1                                 python                      
 dario.cat/mergo                                                               v1.0.2                                 go-module  (+1 duplicate)   
@@ -74,7 +73,8 @@ dconf-service                                                                 0.
 debconf                                                                       1.5.91                                 deb                         
 debian-archive-keyring                                                        2025.1                                 deb                         
 debianutils                                                                   5.23.2                                 deb                         
-debug                                                                         3.2.6                                  npm                         
+debugpy                                                                       1.8.18                                 python                      
+defusedxml                                                                    0.7.1                                  python                      
 diffutils                                                                     1:3.10-4                               deb                         
 dirmngr                                                                       2.4.7-21+deb13u1+b2                    deb                         
 distro                                                                        1.9.0                                  python                      
@@ -84,7 +84,7 @@ docker-buildx-plugin                                                          0.
 docker-ce                                                                     5:29.3.0-1~debian.13~trixie            deb                         
 docker-ce-cli                                                                 5:29.3.0-1~debian.13~trixie            deb                         
 docker-compose-plugin                                                         5.1.1-1~debian.13~trixie               deb                         
-docutils                                                                      0.22                                   python                      
+docutils                                                                      0.22.3                                 python                      
 dpkg                                                                          1.22.22                                deb                         
 dunst                                                                         1.12.2-1                               deb                         
 evdev                                                                         1.9.3                                  python                      
@@ -103,9 +103,8 @@ fonts-noto-color-emoji                                                        2.
 fonts-noto-core                                                               20201225-2                             deb                         
 fonts-noto-mono                                                               20201225-2                             deb                         
 fonts-urw-base35                                                              20200910-8                             deb                         
-fonttools                                                                     4.59.0                                 python                      
+fonttools                                                                     4.61.1                                 python                      
 foot                                                                          1.21.0-2                               deb                         
-freecad-appimage-updater                                                      0.0.3                                  python                      
 frozenlist                                                                    1.7.0                                  python                      
 frozenlist                                                                    1.8.0                                  python                      
 fuse-overlayfs                                                                1.14-1+b1                              deb                         
@@ -505,7 +504,7 @@ github.com/zclconf/go-cty                                                     v1
 github.com/zmap/zcrypto                                                       v0.0.0-20230310154051-c8b263fd8300     go-module                   
 github.com/zmap/zlint/v3                                                      v3.5.0                                 go-module                   
 gmpy2                                                                         2.2.1                                  python                      
-gmsh                                                                          4.13.1                                 python                      
+gmsh                                                                          4.15.0                                 python                      
 gnupg                                                                         2.4.7-21+deb13u1                       deb                         
 gnupg-l10n                                                                    2.4.7-21+deb13u1                       deb                         
 gnupg-utils                                                                   2.4.7-21+deb13u1+b2                    deb                         
@@ -617,13 +616,12 @@ gui-32                                                                        UN
 gui-64                                                                        UNKNOWN                                binary     (+1 duplicate)   
 gui-arm64                                                                     UNKNOWN                                binary     (+1 duplicate)   
 gzip                                                                          1.13-1                                 deb                         
-h2                                                                            4.2.0                                  python                      
+h2                                                                            4.3.0                                  python                      
 hicolor-icon-theme                                                            0.18-2                                 deb                         
 hostname                                                                      3.25                                   deb                         
 hpack                                                                         4.1.0                                  python                      
 hyperframe                                                                    6.1.0                                  python                      
-idna                                                                          3.10                                   python                      
-idna                                                                          3.11                                   python                      
+idna                                                                          3.11                                   python     (+1 duplicate)   
 ifaddr                                                                        0.2.0                                  python                      
 importlib-metadata                                                            8.0.0                                  python                      
 importlib-metadata                                                            8.7.1                                  python                      
@@ -652,10 +650,10 @@ k8s.io/kube-openapi                                                           v0
 k8s.io/utils                                                                  v0.0.0-20250604170112-4c0f3b243397     go-module  (+1 duplicate)   
 kbd                                                                           2.7.1-2                                deb                         
 keyboard-configuration                                                        1.242~deb13u1                          deb                         
-kiwisolver                                                                    1.4.8                                  python                      
+kiwisolver                                                                    1.4.9                                  python                      
 krb5-locales                                                                  1.21.3-5                               deb                         
 labwc                                                                         0.8.3-1                                deb                         
-lark                                                                          1.2.2                                  python                      
+lark                                                                          1.3.1                                  python                      
 libabsl20240722                                                               20240722.0-4                           deb                         
 libacl1                                                                       2.3.2-2+b1                             deb                         
 libaom3                                                                       3.12.1-1                               deb                         
@@ -1048,7 +1046,6 @@ libz3-4                                                                       4.
 libzstd1                                                                      1.5.7+dfsg-1                           deb                         
 libzvbi-common                                                                0.2.44-1                               deb                         
 libzvbi0t64                                                                   0.2.44-1                               deb                         
-license-checker                                                               25.0.1                                 npm                         
 linux-libc-dev                                                                6.12.74-2                              deb                         
 linux-sysctl-defaults                                                         4.12.1                                 deb                         
 locales                                                                       2.41-12+deb13u2                        deb                         
@@ -1056,10 +1053,10 @@ locales-all                                                                   2.
 login                                                                         1:4.16.0-2+really2.41-5                deb                         
 login.defs                                                                    1:4.17.4-2                             deb                         
 loguru                                                                        0.7.3                                  python                      
-lxml                                                                          6.0.0                                  python                      
+lxml                                                                          6.0.2                                  python                      
 make                                                                          4.4.1-2                                deb                         
 man-db                                                                        2.13.1-1                               deb                         
-matplotlib                                                                    3.10.5                                 python                      
+matplotlib                                                                    3.10.8                                 python                      
 mawk                                                                          1.3.4.20250131-1                       deb                         
 media-types                                                                   13.0.0                                 deb                         
 mesa-libgallium                                                               25.0.7-2                               deb                         
@@ -1069,9 +1066,8 @@ more-itertools                                                                10
 more-itertools                                                                10.8.0                                 python                      
 mount                                                                         2.41-5                                 deb                         
 mpmath                                                                        1.3.0                                  python                      
-msgpack                                                                       1.1.1                                  python                      
-msgpack                                                                       1.1.2                                  python                      
-multidict                                                                     6.6.3                                  python                      
+msgpack                                                                       1.1.2                                  python     (+1 duplicate)   
+multidict                                                                     6.7.0                                  python                      
 multidict                                                                     6.7.1                                  python                      
 munkres                                                                       1.1.4                                  python                      
 my-test-package                                                               1.0                                    python                      
@@ -1084,22 +1080,19 @@ nftables                                                                      1.
 nginx                                                                         1.26.3-3+deb13u2                       deb                         
 nginx-common                                                                  1.26.3-3+deb13u2                       deb                         
 nine                                                                          1.1.0                                  python                      
-nopt                                                                          4.0.1                                  npm                         
 numpy                                                                         1.26.4                                 python                      
 nvidia-cuda-nvrtc                                                             13.2.51                                python                      
 ocl-icd-libopencl1                                                            2.3.3-1                                deb                         
 olefile                                                                       0.47                                   python                      
 openbox                                                                       3.6.1-12+b2                            deb                         
 opencamlib                                                                    2022.12.18                             python                      
-opencv-python                                                                 4.11.0                                 python                      
-opencv-python-headless                                                        4.11.0                                 python                      
 openssh-client                                                                1:10.0p1-7+deb13u1                     deb                         
 openssl                                                                       3.5.5-1~deb13u1                        deb                         
 openssl-provider-legacy                                                       3.5.5-1~deb13u1                        deb                         
 packaging                                                                     24.2                                   python                      
 packaging                                                                     25.0                                   python                      
 packaging                                                                     26.0                                   python                      
-pandas                                                                        2.3.1                                  python                      
+pandas                                                                        2.3.3                                  python                      
 pasimple                                                                      0.0.3                                  python                      
 passwd                                                                        1:4.17.4-2                             deb                         
 pci.ids                                                                       0.0~2025.06.09-1                       deb                         
@@ -1108,11 +1101,11 @@ pcmflux                                                                       1.
 perl                                                                          5.40.1-6                               deb                         
 perl-base                                                                     5.40.1-6                               deb                         
 perl-modules-5.40                                                             5.40.1-6                               deb                         
+pillow                                                                        12.0.0                                 python                      
 pillow                                                                        12.1.1                                 python                      
-pillow                                                                        9.5.0                                  python                      
 pinentry-curses                                                               1.3.1-2                                deb                         
 pip                                                                           25.1.1                                 python                      
-pip                                                                           25.2                                   python                      
+pip                                                                           25.3                                   python                      
 pixelflux                                                                     1.5.9                                  python                      
 platformdirs                                                                  4.2.2                                  python                      
 platformdirs                                                                  4.4.0                                  python                      
@@ -1129,16 +1122,15 @@ pulseaudio                                                                    17
 pulseaudio-utils                                                              17.0+dfsg1-2+b1                        deb                         
 pulsectl                                                                      24.12.0                                python                      
 pycollada                                                                     0.9.2                                  python                      
-pycparser                                                                     2.22                                   python                      
 pycparser                                                                     3.0                                    python                      
 pyee                                                                          13.0.1                                 python                      
 pylibsrtp                                                                     1.0.0                                  python                      
 pynput                                                                        1.8.1                                  python                      
 pyopenssl                                                                     26.0.0                                 python                      
-pyparsing                                                                     3.2.3                                  python                      
-pyside2                                                                       5.15.15                                python                      
+pyparsing                                                                     3.2.5                                  python                      
+pyside6                                                                       6.8.3                                  python                      
 pysocks                                                                       1.7.1                                  python                      
-python                                                                        3.11.13                                binary                      
+python                                                                        3.11.14                                binary                      
 python-dateutil                                                               2.9.0.post0                            python                      
 python-xlib                                                                   0.33                                   python                      
 python3                                                                       3.13.5-1                               deb                         
@@ -1150,26 +1142,26 @@ python3.13                                                                    3.
 python3.13-minimal                                                            3.13.5-2                               deb                         
 python3.13-venv                                                               3.13.5-2                               deb                         
 pytz                                                                          2025.2                                 python                      
-pyyaml                                                                        6.0.2                                  python                      
+pyyaml                                                                        6.0.3                                  python                      
 readline-common                                                               8.2-6                                  deb                         
-requests                                                                      2.32.4                                 python                      
+requests                                                                      2.32.5                                 python                      
 resenje.org/singleflight                                                      v0.4.3                                 go-module                   
 rpcsvc-proto                                                                  1.4.3-1                                deb                         
-scipy                                                                         1.16.0                                 python                      
+scipy                                                                         1.16.3                                 python                      
 seatd                                                                         0.9.1-1                                deb                         
 sed                                                                           4.9-2                                  deb                         
 selkies                                                                       0.0.0                                  python                      
 sensible-utils                                                                0.0.25                                 deb                         
 setuptools                                                                    80.9.0                                 python                      
 setuptools                                                                    82.0.1                                 python                      
+shapely                                                                       2.1.2                                  python                      
 shared-mime-info                                                              2.4-5+b2                               deb                         
-shiboken2                                                                     5.15.15                                python                      
+shiboken6                                                                     6.8.3                                  python                      
 sigs.k8s.io/json                                                              v0.0.0-20241014173422-cfa47c3a1cc8     go-module  (+2 duplicates)  
 sigs.k8s.io/randfill                                                          v1.0.0                                 go-module  (+1 duplicate)   
 sigs.k8s.io/structured-merge-diff/v6                                          v6.3.0                                 go-module  (+1 duplicate)   
 sigs.k8s.io/yaml                                                              v1.6.0                                 go-module  (+3 duplicates)  
 six                                                                           1.17.0                                 python     (+1 duplicate)   
-spdx-license-ids                                                              3.0.5                                  npm                         
 sqv                                                                           1.3.0-3+b2                             deb                         
 ssl-cert                                                                      1.1.3                                  deb                         
 stdlib                                                                        go1.25.6                               go-module                   
@@ -1190,16 +1182,14 @@ tomli                                                                         2.
 tomli                                                                         2.4.0                                  python                      
 typeguard                                                                     4.3.0                                  python                      
 typing-extensions                                                             4.12.2                                 python                      
-typing-extensions                                                             4.14.1                                 python                      
-typing-extensions                                                             4.15.0                                 python                      
-tzdata                                                                        2025.2                                 python                      
+typing-extensions                                                             4.15.0                                 python     (+1 duplicate)   
+tzdata                                                                        2025.3                                 python                      
 tzdata                                                                        2026a-0+deb13u1                        deb                         
 udev                                                                          257.9-1~deb13u1                        deb                         
-unicodedata2                                                                  16.0.0                                 python                      
-urllib3                                                                       2.5.0                                  python                      
+unicodedata2                                                                  17.0.0                                 python                      
+urllib3                                                                       2.6.2                                  python                      
 util-linux                                                                    2.41-5                                 deb                         
-validate-npm-package-license                                                  3.0.4                                  npm                         
-vtk                                                                           9.3.0                                  python                      
+vtk                                                                           9.3.1                                  python                      
 vulkan-tools                                                                  1.4.304.0+dfsg1-1                      deb                         
 watchdog                                                                      6.0.0                                  python                      
 websockets                                                                    16.0                                   python                      
@@ -1207,8 +1197,7 @@ wheel                                                                         0.
 wheel                                                                         0.46.3                                 python                      
 wl-clipboard                                                                  2.2.1-2                                deb                         
 wlr-randr                                                                     0.4.1-1                                deb                         
-wslink                                                                        2.3.4                                  python                      
-wtype                                                                         0.4-3                                  deb                         
+wslink                                                                        2.5.0                                  python                      
 x11-apps                                                                      7.7+11+b1                              deb                         
 x11-common                                                                    1:7.7+24+deb13u1                       deb                         
 x11-session-utils                                                             7.7+6+b1                               deb                         
@@ -1227,7 +1216,7 @@ xfonts-encodings                                                              1:
 xfonts-utils                                                                  1:7.7+7                                deb                         
 xkb-data                                                                      2.42-1                                 deb                         
 xkbcommon                                                                     1.5.1                                  python                      
-xlrd                                                                          2.0.1                                  python                      
+xlrd                                                                          2.0.2                                  python                      
 xlutils                                                                       2.0.0                                  python                      
 xlwt                                                                          1.3.0                                  python                      
 xsel                                                                          1.2.1-1                                deb                         
@@ -1244,9 +1233,8 @@ xterm                                                                         39
 xutils                                                                        1:7.7+24+deb13u1                       deb                         
 xvfb                                                                          2:21.1.16-1.3+deb13u1                  deb                         
 xwayland                                                                      2:24.1.6-1                             deb                         
-yarl                                                                          1.20.1                                 python                      
+yarl                                                                          1.22.0                                 python                      
 yarl                                                                          1.23.0                                 python                      
 zipp                                                                          3.19.2                                 python                      
 zipp                                                                          3.23.0                                 python                      
 zlib1g                                                                        1:1.3.dfsg+really1.3.1-1+b1            deb                         
-zstandard                                                                     0.23.0                                 python                      
