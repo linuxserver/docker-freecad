@@ -6,7 +6,7 @@ aiofiles                                                                      25
 aiohappyeyeballs                                                              2.6.1                                  python                      
 aiohappyeyeballs                                                              2.6.2                                  python                      
 aiohttp                                                                       3.13.2                                 python                      
-aiohttp                                                                       3.14.0                                 python                      
+aiohttp                                                                       3.14.1                                 python                      
 aioice                                                                        0.10.2                                 python                      
 aiosignal                                                                     1.4.0                                  python     (+1 duplicate)   
 apt                                                                           3.0.3                                  deb                         
@@ -16,7 +16,7 @@ at-spi2-common                                                                2.
 attrs                                                                         25.4.0                                 python                      
 attrs                                                                         26.1.0                                 python                      
 autocommand                                                                   2.2.2                                  python     (+1 duplicate)   
-av                                                                            17.0.1                                 python                      
+av                                                                            17.1.0                                 python                      
 backports-tarfile                                                             1.2.0                                  python     (+1 duplicate)   
 backports-zstd                                                                1.2.0                                  python                      
 base-files                                                                    13.8+deb13u5                           deb                         
@@ -59,7 +59,7 @@ cpp-14-x86-64-linux-gnu                                                       14
 cpp-x86-64-linux-gnu                                                          4:14.2.0-1                             deb                         
 cron                                                                          3.0pl1-197                             deb                         
 cron-daemon-common                                                            3.0pl1-197                             deb                         
-cryptography                                                                  48.0.0                                 python                      
+cryptography                                                                  49.0.0                                 python                      
 curl                                                                          8.14.1-2+deb13u3                       deb                         
 cycler                                                                        0.12.1                                 python                      
 dario.cat/mergo                                                               v1.0.2                                 go-module  (+1 duplicate)   
@@ -784,8 +784,8 @@ libidn2-0                                                                     2.
 libigdgmm12                                                                   22.7.2+ds1-1                           deb                         
 libijs-0.35                                                                   0.35-15.2                              deb                         
 libimlib2t64                                                                  1.12.4-2                               deb                         
-libinput-bin                                                                  1.28.1-1                               deb                         
-libinput10                                                                    1.28.1-1                               deb                         
+libinput-bin                                                                  1.28.1-1+deb13u1                       deb                         
+libinput10                                                                    1.28.1-1+deb13u1                       deb                         
 libip4tc2                                                                     1.8.11-2                               deb                         
 libip6tc2                                                                     1.8.11-2                               deb                         
 libisl23                                                                      0.27-1                                 deb                         
@@ -798,7 +798,7 @@ libjpeg62-turbo                                                               1:
 libjq1                                                                        1.7.1-6+deb13u2                        deb                         
 libjson-c5                                                                    0.18+ds-1                              deb                         
 libjsoncpp26                                                                  1.9.6-3                                deb                         
-libjxl0.11                                                                    0.11.2-0.1~deb13u1                     deb                         
+libjxl0.11                                                                    0.11.2-0.1~deb13u2                     deb                         
 libk5crypto3                                                                  1.21.3-5+deb13u1                       deb                         
 libkeyutils1                                                                  1.6.3-6                                deb                         
 libkmod2                                                                      34.2-2                                 deb                         
@@ -912,7 +912,7 @@ libspeex1                                                                     1.
 libspeexdsp1                                                                  1.2.1-3                                deb                         
 libsqlite3-0                                                                  3.46.1-7+deb13u1                       deb                         
 libssh2-1t64                                                                  1.11.1-1                               deb                         
-libssl3t64                                                                    3.5.6-1~deb13u1                        deb                         
+libssl3t64                                                                    3.5.6-1~deb13u2                        deb                         
 libstartup-notification0                                                      0.12-8                                 deb                         
 libstdc++-14-dev                                                              14.2.0-19                              deb                         
 libstdc++6                                                                    14.2.0-19                              deb                         
@@ -1053,7 +1053,8 @@ more-itertools                                                                10
 more-itertools                                                                10.8.0                                 python                      
 mount                                                                         2.41-5                                 deb                         
 mpmath                                                                        1.3.0                                  python                      
-msgpack                                                                       1.1.2                                  python     (+1 duplicate)   
+msgpack                                                                       1.1.2                                  python                      
+msgpack                                                                       1.2.0                                  python                      
 multidict                                                                     6.7.0                                  python                      
 multidict                                                                     6.7.1                                  python                      
 munkres                                                                       1.1.4                                  python                      
@@ -1064,8 +1065,8 @@ ncurses-term                                                                  6.
 netbase                                                                       6.5                                    deb                         
 netcat-traditional                                                            1.10-50                                deb                         
 nftables                                                                      1.1.3-1                                deb                         
-nginx                                                                         1.26.3-3+deb13u5                       deb                         
-nginx-common                                                                  1.26.3-3+deb13u5                       deb                         
+nginx                                                                         1.26.3-3+deb13u6                       deb                         
+nginx-common                                                                  1.26.3-3+deb13u6                       deb                         
 nine                                                                          1.1.0                                  python                      
 numpy                                                                         1.26.4                                 python                      
 nvidia-cuda-nvrtc                                                             13.3.33                                python                      
@@ -1074,8 +1075,8 @@ olefile                                                                       0.
 openbox                                                                       3.6.1-12+b2                            deb                         
 opencamlib                                                                    2022.12.18                             python                      
 openssh-client                                                                1:10.0p1-7+deb13u4                     deb                         
-openssl                                                                       3.5.6-1~deb13u1                        deb                         
-openssl-provider-legacy                                                       3.5.6-1~deb13u1                        deb                         
+openssl                                                                       3.5.6-1~deb13u2                        deb                         
+openssl-provider-legacy                                                       3.5.6-1~deb13u2                        deb                         
 packaging                                                                     24.2                                   python                      
 packaging                                                                     25.0                                   python                      
 packaging                                                                     26.0                                   python                      
@@ -1113,7 +1114,7 @@ pycparser                                                                     3.
 pyee                                                                          13.0.1                                 python                      
 pylibsrtp                                                                     1.0.0                                  python                      
 pynput                                                                        1.8.2                                  python                      
-pyopenssl                                                                     26.2.0                                 python                      
+pyopenssl                                                                     26.3.0                                 python                      
 pyparsing                                                                     3.2.5                                  python                      
 pyside6                                                                       6.8.3                                  python                      
 pysocks                                                                       1.7.1                                  python                      
