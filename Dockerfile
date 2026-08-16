@@ -21,7 +21,7 @@ RUN \
     https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/freecad-logo.png && \
   echo "**** install packages ****" && \
   DOWNLOAD_URL=$(curl -sX GET "https://api.github.com/repos/FreeCAD/FreeCAD/releases/latest" \
-    | awk -F '(": "|")' '/browser.*Linux-x86_64-py311.AppImage/ {print $3;exit}') && \
+    | jq -r 'first(.assets[].browser_download_url | select(test("Linux-x86_64-py311.AppImage")))') && \
   curl -o \
     /tmp/freecad.app -L \
     "${DOWNLOAD_URL}" && \
