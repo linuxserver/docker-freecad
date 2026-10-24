@@ -35,10 +35,10 @@ brotli                                                                        1.
 bsd-mailx                                                                     8.1.2-0.20220412cvs-1.1                deb                         
 bsdextrautils                                                                 2.41.5-0+deb13u1                       deb                         
 bsdutils                                                                      1:2.41.5-0+deb13u1                     deb                         
-ca-certificates                                                               20250419                               deb                         
+ca-certificates                                                               20250419+deb13u1                       deb                         
 catatonit                                                                     0.2.1-2+b14                            deb                         
 certifi                                                                       2025.11.12                             python                      
-certifi                                                                       2026.7.22                              python                      
+certifi                                                                       2026.10.23                             python                      
 cffi                                                                          2.1.1                                  python                      
 charset-normalizer                                                            3.4.4                                  python                      
 cli                                                                           UNKNOWN                                binary     (+1 duplicate)   
@@ -55,7 +55,7 @@ cmake                                                                         3.
 cmake-data                                                                    3.31.6-2                               deb                         
 code.cloudfoundry.org/clock                                                   v1.60.0                                go-module                   
 console-data                                                                  2:1.12-9                               deb                         
-containerd.io                                                                 2.4.2-2~debian.13~trixie               deb                         
+containerd.io                                                                 2.4.2-3~debian.13~trixie               deb                         
 contourpy                                                                     1.3.3                                  python                      
 coreutils                                                                     9.7-3                                  deb                         
 cpp                                                                           4:14.2.0-1                             deb                         
@@ -92,17 +92,17 @@ diffutils                                                                     1:
 dirmngr                                                                       2.4.7-21+deb13u1+b5                    deb                         
 dmsetup                                                                       2:1.02.205-2                           deb                         
 dnspython                                                                     2.9.0                                  python                      
-docker-buildx-plugin                                                          0.38.0-1~debian.13~trixie              deb                         
-docker-ce                                                                     5:29.9.1-1~debian.13~trixie            deb                         
-docker-ce-cli                                                                 5:29.9.1-1~debian.13~trixie            deb                         
-docker-compose-plugin                                                         5.6.0-1~debian.13~trixie               deb                         
+docker-buildx-plugin                                                          0.38.1-1~debian.13~trixie              deb                         
+docker-ce                                                                     5:29.9.2-1~debian.13~trixie            deb                         
+docker-ce-cli                                                                 5:29.9.2-1~debian.13~trixie            deb                         
+docker-compose-plugin                                                         5.6.1-1~debian.13~trixie               deb                         
 docutils                                                                      0.22.3                                 python                      
 dpkg                                                                          1.22.22                                deb                         
 dunst                                                                         1.12.2-1                               deb                         
 exim4-base                                                                    4.98.2-1+deb13u5                       deb                         
 exim4-config                                                                  4.98.2-1+deb13u5                       deb                         
 exim4-daemon-light                                                            4.98.2-1+deb13u5                       deb                         
-fastapi                                                                       0.143.3                                python                      
+fastapi                                                                       0.162.0                                python                      
 file                                                                          1:5.46-5                               deb                         
 findutils                                                                     4.10.0-3                               deb                         
 firmware-amd-graphics                                                         20250410-2                             deb                         
@@ -233,11 +233,11 @@ github.com/digitorus/pkcs7                                                    v0
 github.com/digitorus/timestamp                                                v0.0.0-20231217203849-220c5c2851b7     go-module  (+1 duplicate)   
 github.com/dimchansky/utfbom                                                  v1.1.1                                 go-module                   
 github.com/distribution/reference                                             v0.6.0                                 go-module  (+4 duplicates)  
-github.com/docker/buildx                                                      v0.38.0                                go-module                   
+github.com/docker/buildx                                                      v0.38.1                                go-module                   
 github.com/docker/cli                                                         v29.8.2+incompatible                   go-module  (+1 duplicate)   
 github.com/docker/cli-docs-tool                                               v0.11.0                                go-module  (+1 duplicate)   
 github.com/docker/cli/cmd/docker                                              UNKNOWN                                go-module                   
-github.com/docker/compose/v5                                                  v5.6.0                                 go-module                   
+github.com/docker/compose/v5                                                  v5.6.1                                 go-module                   
 github.com/docker/distribution                                                v2.8.3+incompatible                    go-module                   
 github.com/docker/docker                                                      v28.5.2+incompatible                   go-module                   
 github.com/docker/docker-credential-helpers                                   v0.9.9                                 go-module  (+1 duplicate)   
@@ -365,7 +365,7 @@ github.com/moby/moby/api                                                      v1
 github.com/moby/moby/api                                                      v1.56.1                                go-module  (+1 duplicate)   
 github.com/moby/moby/client                                                   v0.6.0                                 go-module                   
 github.com/moby/moby/client                                                   v0.6.1                                 go-module                   
-github.com/moby/moby/v2                                                       v29.9.1                                go-module  (+1 duplicate)   
+github.com/moby/moby/v2                                                       v29.9.2                                go-module  (+1 duplicate)   
 github.com/moby/patternmatcher                                                v0.6.1                                 go-module  (+2 duplicates)  
 github.com/moby/policy-helpers                                                v0.0.0-20261006174519-bd98f4747414     go-module  (+1 duplicate)   
 github.com/moby/profiles/apparmor                                             v0.2.2                                 go-module                   
@@ -624,7 +624,7 @@ libavutil59                                                                   7:
 libbinutils                                                                   2.44-3                                 deb                         
 libblkid1                                                                     2.41.5-0+deb13u1                       deb                         
 libbpf1                                                                       1:1.5.0-3                              deb                         
-libbrotli1                                                                    1.1.0-2+b7                             deb                         
+libbrotli1                                                                    1.1.0-2+deb13u1                        deb                         
 libbsd0                                                                       0.12.2-2                               deb                         
 libbz2-1.0                                                                    1.0.8-6                                deb                         
 libc-bin                                                                      2.41-12+deb13u4                        deb                         
@@ -735,9 +735,9 @@ libgtk-3-common                                                               3.
 libgudev-1.0-0                                                                238-6                                  deb                         
 libharfbuzz-gobject0                                                          10.2.0-1+deb13u1                       deb                         
 libharfbuzz0b                                                                 10.2.0-1+deb13u1                       deb                         
-libheif-plugin-dav1d                                                          1.23.4-1~deb13u1                       deb                         
-libheif-plugin-libde265                                                       1.23.4-1~deb13u1                       deb                         
-libheif1                                                                      1.23.4-1~deb13u1                       deb                         
+libheif-plugin-dav1d                                                          1.23.6-2~deb13u1                       deb                         
+libheif-plugin-libde265                                                       1.23.6-2~deb13u1                       deb                         
+libheif1                                                                      1.23.6-2~deb13u1                       deb                         
 libhogweed6t64                                                                3.10.1-1                               deb                         
 libhwasan0                                                                    14.2.0-19                              deb                         
 libhwy1t64                                                                    1.2.0-2+b2                             deb                         
@@ -903,7 +903,7 @@ libtwolame0                                                                   0.
 libubsan1                                                                     14.2.0-19                              deb                         
 libuchardet0                                                                  0.0.8-1+b2                             deb                         
 libudev1                                                                      257.13-1~deb13u1                       deb                         
-libunbound8                                                                   1.26.1-0+deb13u1                       deb                         
+libunbound8                                                                   1.26.2-0+deb13u1                       deb                         
 libunistring5                                                                 1.3-2                                  deb                         
 libunwind8                                                                    1.8.1-0.1                              deb                         
 libutempter0                                                                  1.2.1-4                                deb                         
@@ -1033,8 +1033,8 @@ ncurses-term                                                                  6.
 netbase                                                                       6.5                                    deb                         
 netcat-traditional                                                            1.10-50                                deb                         
 nftables                                                                      1.1.3-1                                deb                         
-nginx                                                                         1.26.3-3+deb13u9                       deb                         
-nginx-common                                                                  1.26.3-3+deb13u9                       deb                         
+nginx                                                                         1.26.3-3+deb13u10                      deb                         
+nginx-common                                                                  1.26.3-3+deb13u10                      deb                         
 nine                                                                          1.1.0                                  python                      
 numpy                                                                         1.26.4                                 python                      
 nvidia-ml-py                                                                  13.615.71                              python                      
@@ -1048,12 +1048,12 @@ openssl-provider-legacy                                                       3.
 opentelemetry-api                                                             1.45.1                                 python                      
 packaging                                                                     24.2                                   python                      
 packaging                                                                     25.0                                   python                      
-packaging                                                                     26.0                                   python                      
+packaging                                                                     26.3                                   python                      
 pandas                                                                        2.3.3                                  python                      
 passwd                                                                        1:4.17.4-2                             deb                         
 pci.ids                                                                       0.0~2025.06.09-1                       deb                         
 pciutils                                                                      1:3.13.0-2                             deb                         
-pcmflux                                                                       2.1.0                                  python                      
+pcmflux                                                                       2.2.0                                  python                      
 pelorus                                                                       0.2.3                                  python                      
 perl                                                                          5.40.1-6+deb13u1                       deb                         
 perl-base                                                                     5.40.1-6+deb13u1                       deb                         
@@ -1063,7 +1063,7 @@ pillow                                                                        13
 pinentry-curses                                                               1.3.1-2                                deb                         
 pip                                                                           25.1.1                                 python                      
 pip                                                                           25.3                                   python                      
-pixelflux                                                                     2.1.0                                  python                      
+pixelflux                                                                     2.2.1                                  python                      
 platformdirs                                                                  4.2.2                                  python                      
 platformdirs                                                                  4.4.0                                  python                      
 ply                                                                           3.11                                   python                      
@@ -1081,10 +1081,10 @@ pulseaudio-utils                                                              17
 pulsectl                                                                      24.12.0                                python                      
 pulsectl-asyncio                                                              1.3.2                                  python                      
 pycollada                                                                     0.9.2                                  python                      
-pycparser                                                                     3.11                                   python                      
+pycparser                                                                     3.12                                   python                      
 pydantic                                                                      2.14.1                                 python                      
 pydantic-core                                                                 2.50.1                                 python                      
-pyee                                                                          14.0.0                                 python                      
+pyee                                                                          15.0.0                                 python                      
 pygobject                                                                     3.50.0                                 python                      
 pylibsrtp                                                                     1.0.0                                  python                      
 pyopenssl                                                                     26.4.0                                 python                      
@@ -1112,10 +1112,10 @@ rpcsvc-proto                                                                  1.
 scipy                                                                         1.16.3                                 python                      
 seatd                                                                         0.9.1-1                                deb                         
 sed                                                                           4.9-2+deb13u1                          deb                         
-selkies                                                                       2.0.0                                  python                      
+selkies                                                                       2.1.0                                  python                      
 sensible-utils                                                                0.0.25                                 deb                         
 setuptools                                                                    80.9.0                                 python                      
-setuptools                                                                    84.0.0                                 python                      
+setuptools                                                                    84.2.1                                 python                      
 shapely                                                                       2.1.2                                  python                      
 shared-mime-info                                                              2.4-5+b2                               deb                         
 shiboken6                                                                     6.8.3                                  python                      
@@ -1126,10 +1126,9 @@ sigs.k8s.io/yaml                                                              v1
 six                                                                           1.17.0                                 python                      
 sqv                                                                           1.3.0-3+b2                             deb                         
 ssl-cert                                                                      1.1.3                                  deb                         
-starlette                                                                     1.8.0                                  python                      
-stdlib                                                                        go1.26.8                               go-module  (+1 duplicate)   
-stdlib                                                                        go1.26.9                               go-module  (+2 duplicates)  
-stdlib                                                                        go1.27.2                               go-module  (+3 duplicates)  
+starlette                                                                     1.9.0                                  python                      
+stdlib                                                                        go1.26.10                              go-module  (+4 duplicates)  
+stdlib                                                                        go1.27.3                               go-module  (+3 duplicates)  
 stterm                                                                        0.9.2-1                                deb                         
 sudo                                                                          1.9.16p2-3+deb13u2                     deb                         
 svgwrite                                                                      1.4.3                                  python                      
@@ -1149,7 +1148,7 @@ typing-extensions                                                             4.
 typing-extensions                                                             4.16.0                                 python                      
 typing-inspection                                                             0.4.4                                  python                      
 tzdata                                                                        2025.3                                 python                      
-tzdata                                                                        2026c-0+deb13u1                        deb                         
+tzdata                                                                        2026e-0+deb13u1                        deb                         
 udev                                                                          257.13-1~deb13u1                       deb                         
 unicodedata2                                                                  17.0.0                                 python                      
 urllib3                                                                       2.6.2                                  python                      
@@ -1160,7 +1159,7 @@ vtk                                                                           9.
 vulkan-tools                                                                  1.4.304.0+dfsg1-1                      deb                         
 watchdog                                                                      6.0.0                                  python                      
 watchfiles                                                                    1.3.0                                  python                      
-websockets                                                                    17.2                                   python                      
+websockets                                                                    17.3                                   python                      
 wheel                                                                         0.45.1                                 python     (+1 duplicate)   
 wheel                                                                         0.46.3                                 python                      
 wl-clipboard                                                                  2.2.1-2                                deb                         
